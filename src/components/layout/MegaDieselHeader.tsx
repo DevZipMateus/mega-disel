@@ -26,7 +26,7 @@ const MegaDieselHeader = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
+      isScrolled ? 'bg-black shadow-lg' : 'bg-black/95 backdrop-blur-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
@@ -45,7 +45,7 @@ const MegaDieselHeader = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-black hover:text-yellow-500 font-medium transition-colors duration-300"
+                className="text-white hover:text-yellow-500 font-medium transition-colors duration-300"
               >
                 {item.name}
               </a>
@@ -67,7 +67,7 @@ const MegaDieselHeader = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-black"
+              className="text-white hover:text-yellow-500"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -77,12 +77,12 @@ const MegaDieselHeader = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-black border-t border-gray-800">
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-black hover:text-yellow-500 font-medium transition-colors duration-300"
+                  className="block px-3 py-2 text-white hover:text-yellow-500 font-medium transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
