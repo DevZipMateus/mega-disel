@@ -1,0 +1,23 @@
+
+User-agent: *
+Allow: /
+
+# Principais páginas
+Allow: /#inicio
+Allow: /#sobre  
+Allow: /#servicos
+Allow: /#localizacao
+Allow: /#contato
+
+# Disallow admin areas and other restricted paths
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /_*
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://megadieselautopecas.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
