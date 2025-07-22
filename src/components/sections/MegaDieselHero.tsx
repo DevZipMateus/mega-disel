@@ -99,7 +99,7 @@ const MegaDieselHero = () => {
               <p className="text-white font-semibold">Atendimento</p>
               <p className="text-gray-300">Atendimento Digital 24/7</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
