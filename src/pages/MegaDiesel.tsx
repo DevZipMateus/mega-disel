@@ -5,6 +5,7 @@ import MegaDieselFooter from '@/components/layout/MegaDieselFooter';
 import MegaDieselHero from '@/components/sections/MegaDieselHero';
 import MegaDieselAbout from '@/components/sections/MegaDieselAbout';
 import MegaDieselServices from '@/components/sections/MegaDieselServices';
+import MegaDieselProducts from '@/components/sections/MegaDieselProducts';
 import MegaDieselLocation from '@/components/sections/MegaDieselLocation';
 import MegaDieselContact from '@/components/sections/MegaDieselContact';
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat';
@@ -71,6 +72,7 @@ const MegaDiesel = () => {
         <MegaDieselHero />
         <MegaDieselAbout />
         <MegaDieselServices />
+        <MegaDieselProducts />
         <MegaDieselLocation />
         <MegaDieselContact />
       </main>
