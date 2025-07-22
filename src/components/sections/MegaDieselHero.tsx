@@ -5,21 +5,9 @@ import { Phone, MapPin, Clock } from 'lucide-react';
 
 const MegaDieselHero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      <video 
-        className="fixed top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -z-10 transform -translate-x-1/2 -translate-y-1/2 brightness-50 transition-opacity duration-1000"
-        autoPlay 
-        muted 
-        loop
-        playsInline
-      >
-        <source src="https://streamable.com/8fh0r1.mp4" type="video/mp4" />
-        Seu navegador não suporta vídeos em HTML5.
-      </video>
-      
-      {/* Background overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-yellow-900">
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
