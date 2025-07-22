@@ -1,12 +1,14 @@
-
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Phone, MapPin, Clock } from 'lucide-react';
 
 const MegaDieselHero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-yellow-900">
-      {/* Background overlay */}
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-animated"></div>
+      
+      {/* Static overlay for contrast */}
       <div className="absolute inset-0 bg-black/50"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
