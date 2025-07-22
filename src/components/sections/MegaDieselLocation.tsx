@@ -104,7 +104,7 @@ const MegaDieselLocation = () => {
                 para clientes de toda a região metropolitana.
               </p>
               <a 
-                href="https://share.google/PwfLuGWDUVX67I2hh"
+                href="https://www.google.com/maps/place/R.+Hermeto+Bermudez,+75+-+Jardim+Leopoldina,+Porto+Alegre+-+RS,+91250-040"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-yellow-500 hover:text-yellow-400 transition-colors duration-300"
@@ -124,7 +124,7 @@ const MegaDieselLocation = () => {
           >
             <div className="bg-white rounded-lg p-4 shadow-lg h-full min-h-[400px]">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.123456789!2d-51.123456789!3d-30.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA3JzI0LjQiUyA1McKwMDcnMjQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.7363847399806!2d-51.14627842495836!3d-29.987264574963884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951977f5b5b5b5b5%3A0x0!2sR.+Hermeto+Bermudez%2C+75+-+Jardim+Leopoldina%2C+Porto+Alegre+-+RS%2C+91250-040!5e0!3m2!1spt-BR!2sbr!4v1642345678901!5m2!1spt-BR!2sbr"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0, borderRadius: '8px' }} 
