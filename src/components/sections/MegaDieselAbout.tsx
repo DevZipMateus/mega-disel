@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { TrendingUp, Award, Users, Clock } from 'lucide-react';
+import { Users, Target, Award, Wrench } from 'lucide-react';
 
 const MegaDieselAbout = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,29 +30,29 @@ const MegaDieselAbout = () => {
 
   const features = [
     {
-      icon: TrendingUp,
-      title: "Crescimento Constante",
-      description: "Empresa nova no mercado em constante crescimento e expansão."
+      icon: Wrench,
+      title: 'Experiência',
+      description: 'Anos de experiência no mercado de autopeças para linha pesada e leve.'
+    },
+    {
+      icon: Target,
+      title: 'Precisão',
+      description: 'Diagnósticos precisos e soluções eficazes para seus problemas mecânicos.'
     },
     {
       icon: Award,
-      title: "Qualidade Garantida",
-      description: "Peças de qualidade para veículos diesel linha pesada e linha leve."
+      title: 'Qualidade',
+      description: 'Produtos de qualidade das melhores marcas do mercado nacional e internacional.'
     },
     {
       icon: Users,
-      title: "Atendimento Digital",
-      description: "Atuação no âmbito digital através de redes sociais e WhatsApp."
-    },
-    {
-      icon: Clock,
-      title: "Agilidade",
-      description: "Entrega rápida pessoalmente ou através de transportadoras."
+      title: 'Atendimento',
+      description: 'Atendimento personalizado com agilidade, qualidade e confiança.'
     }
   ];
 
   return (
-    <section ref={sectionRef} id="sobre" className="py-16 lg:py-24 bg-gray-50">
+    <section ref={sectionRef} id="sobre" className="py-16 lg:py-24 bg-white">
       <div className="section-container">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-16" 
@@ -64,77 +64,45 @@ const MegaDieselAbout = () => {
             Sobre a <span className="text-yellow-500">MEGA DIESEL</span>
           </h2>
           <p className="section-subtitle">
-            Conheça nossa história e compromisso com a excelência em autopeças.
+            A MEGA DIESEL AUTOPEÇAS é seu novo conceito em autopeças para linha pesada e linha leve. 
+            Oferecemos agilidade, qualidade e confiança em cada atendimento.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          >
-            <h3 className="text-2xl font-bold text-black mb-6">
-              Sua Nova Referência em Autopeças
-            </h3>
-            
-            <div className="space-y-4 text-gray-700 mb-8">
-              <p>
-                A MEGA DIESEL AUTO PEÇAS é uma empresa nova no mercado de Auto Peças, 
-                que vem em constante crescimento! Atuamos no âmbito digital através de 
-                redes sociais, Mercado Livre e WhatsApp.
-              </p>
-              
-              <p>
-                Dependendo da região entregamos pessoalmente ou através de grandes 
-                transportadoras, conforme a combinar com o cliente. Estamos localizados 
-                na zona norte de Porto Alegre, local de fácil acesso.
-              </p>
-              
-              <p className="font-semibold text-black">
-                Trabalhamos com ampla linha de peças para veículos diesel linha pesada 
-                e também para veículos de linha leve.
-              </p>
-            </div>
-
-            <div className="bg-black text-white p-6 rounded-lg">
-              <p className="text-lg font-semibold text-yellow-500 mb-2">
-                Nossa Missão
-              </p>
-              <p>
-                Fornecer peças automotivas de qualidade com agilidade, qualidade e 
-                confiança, sendo sua nova referência no mercado de autopeças.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Features Grid */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <feature.icon className="h-12 w-12 text-yellow-500 mb-4" />
-                <h4 className="text-lg font-semibold text-black mb-2">
-                  {feature.title}
-                </h4>
-                <p className="text-gray-600 text-sm">
-                  {feature.description}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <feature.icon className="h-8 w-8 text-yellow-500" />
+              </div>
+              <h3 className="text-xl font-bold text-black mb-3">{feature.title}</h3>
+              <p className="text-gray-700">{feature.description}</p>
+            </motion.div>
+          ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="bg-black rounded-lg p-8 text-white text-center"
+        >
+          <h3 className="text-2xl font-bold mb-4">
+            <span className="text-yellow-500">AGILIDADE</span> • 
+            <span className="text-yellow-500"> QUALIDADE</span> • 
+            <span className="text-yellow-500"> CONFIANÇA</span>
+          </h3>
+          <p className="text-lg max-w-3xl mx-auto">
+            Na MEGA DIESEL AUTOPEÇAS, trabalhamos com dedicação para oferecer as melhores soluções 
+            em autopeças, garantindo que seu veículo tenha o desempenho e a durabilidade que você precisa.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

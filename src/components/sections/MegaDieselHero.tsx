@@ -36,75 +36,68 @@ const MegaDieselHero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg"
-            style={{
-              textShadow: '0 0 20px rgba(255, 215, 0, 0.3), 0 0 40px rgba(255, 215, 0, 0.1)'
-            }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
-            MEGA DIESEL
-            <br />
-            <span className="text-yellow-500 drop-shadow-xl">AUTOPEÇAS</span>
+            Seu Novo Conceito em{' '}
+            <span className="text-yellow-500 drop-shadow-lg">Autopeças</span>
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>para Linha Pesada e Leve
           </motion.h1>
 
-          {/* Slogan with enhanced styling */}
+          {/* Subtitle with enhanced styling */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg sm:text-xl md:text-2xl text-yellow-400 mb-8 font-semibold drop-shadow-md"
+            className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed"
           >
-            AGILIDADE, QUALIDADE E CONFIANÇA
+            <span className="font-semibold text-yellow-400">AGILIDADE</span> • {' '}
+            <span className="font-semibold text-yellow-400">QUALIDADE</span> • {' '}
+            <span className="font-semibold text-yellow-400">CONFIANÇA</span>
           </motion.p>
 
-          <motion.p
+          {/* Enhanced CTA buttons */}
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-base sm:text-lg text-gray-200 mb-10 max-w-3xl mx-auto drop-shadow-sm"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
-            Seu novo conceito em autopeças, linha pesada e linha leve.
-            <br />
-            Tudo que você precisar, vai encontrar na MEGA DIESEL AUTOPEÇAS.
-          </motion.p>
+            <Button className="btn-primary text-lg px-8 py-4 shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105">
+              <a href="https://wa.me/5551984082546?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20autopeças." target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <img src="/lovable-uploads/5a46be1b-4445-4178-8d9f-a7e8edfd42d5.png" alt="WhatsApp" className="h-6 w-6 mr-2" />
+                Fale Conosco via WhatsApp
+              </a>
+            </Button>
+            
+            <Button className="btn-secondary text-lg px-8 py-4 border-2 border-white hover:bg-white hover:text-black transition-all duration-300">
+              <a href="#servicos">Conheça Nossos Serviços</a>
+            </Button>
+          </motion.div>
 
-          {/* Enhanced CTA Buttons */}
+          {/* Contact info cards with enhanced styling */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto"
           >
-            <Button className="btn-secondary px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              <a href="https://wa.me/5551984082546?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20autopeças." target="_blank" rel="noopener noreferrer">
-                Fale Conosco no WhatsApp
-              </a>
-            </Button>
-            <Button variant="outline" className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              <a href="#servicos">Nossos Serviços</a>
-            </Button>
-          </motion.div>
-
-          {/* Enhanced quick info cards */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
-          >
-            <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300">
-              <Phone className="h-8 w-8 text-yellow-500 mx-auto mb-3 drop-shadow-lg" />
-              <h3 className="text-white font-semibold mb-2">Contato Direto</h3>
-              <p className="text-gray-300 text-sm">(51) 98408-2546</p>
+            <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <Phone className="h-8 w-8 text-yellow-400 mx-auto mb-2" />
+              <p className="text-white font-semibold">Telefone</p>
+              <p className="text-gray-300">(51) 98408-2546</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300">
-              <MapPin className="h-8 w-8 text-yellow-500 mx-auto mb-3 drop-shadow-lg" />
-              <h3 className="text-white font-semibold mb-2">Localização</h3>
-              <p className="text-gray-300 text-sm">Porto Alegre - RS</p>
+            
+            <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <MapPin className="h-8 w-8 text-yellow-400 mx-auto mb-2" />
+              <p className="text-white font-semibold">Localização</p>
+              <p className="text-gray-300">Porto Alegre - RS</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 text-center border border-white/20 shadow-xl hover:bg-white/15 transition-all duration-300">
-              <Clock className="h-8 w-8 text-yellow-500 mx-auto mb-3 drop-shadow-lg" />
-              <h3 className="text-white font-semibold mb-2">Atendimento</h3>
-              <p className="text-gray-300 text-sm">Digital 24/7</p>
+            
+            <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <Clock className="h-8 w-8 text-yellow-400 mx-auto mb-2" />
+              <p className="text-white font-semibold">Atendimento</p>
+              <p className="text-gray-300">Atendimento Digital 24/7</p>
             </div>
           </motion.div>
         </div>
