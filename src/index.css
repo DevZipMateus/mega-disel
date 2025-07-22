@@ -97,22 +97,112 @@
     @apply bg-yellow-500 text-black hover:bg-yellow-400 transition-colors duration-300;
   }
 
-  /* Animated gradient background for hero section */
+  /* Enhanced animated gradient background for hero section */
   .bg-gradient-animated {
-    background: linear-gradient(-45deg, #000000, #1a1a1a, #333333, #b8860b, #1a1a1a, #000000);
+    background: linear-gradient(-45deg, 
+      #000000, 
+      #1a1a1a, 
+      #2d2d2d, 
+      #b8860b, 
+      #daa520, 
+      #333333, 
+      #1a1a1a, 
+      #000000
+    );
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    animation: gradientShift 20s ease-in-out infinite;
+    will-change: background-position;
+  }
+
+  /* Floating particles effect */
+  .bg-gradient-animated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(212, 165, 116, 0.06) 0%, transparent 50%);
+    animation: particleFloat 25s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  /* Subtle overlay pattern */
+  .bg-gradient-animated::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 215, 0, 0.02) 2px,
+        rgba(255, 215, 0, 0.02) 4px
+      );
+    animation: patternShift 30s linear infinite;
+    pointer-events: none;
   }
 
   @keyframes gradientShift {
-    0% {
+    0%, 100% {
       background-position: 0% 50%;
     }
-    50% {
+    25% {
       background-position: 100% 50%;
     }
+    50% {
+      background-position: 50% 100%;
+    }
+    75% {
+      background-position: 50% 0%;
+    }
+  }
+
+  @keyframes particleFloat {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+      opacity: 0.6;
+    }
+    25% {
+      transform: translateY(-10px) rotate(90deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-5px) rotate(180deg);
+      opacity: 0.4;
+    }
+    75% {
+      transform: translateY(-15px) rotate(270deg);
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes patternShift {
+    0% {
+      transform: translateX(0px);
+    }
     100% {
-      background-position: 0% 50%;
+      transform: translateX(20px);
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .bg-gradient-animated {
+      animation: none;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #333333, #b8860b);
+    }
+    
+    .bg-gradient-animated::before,
+    .bg-gradient-animated::after {
+      animation: none;
     }
   }
 }
