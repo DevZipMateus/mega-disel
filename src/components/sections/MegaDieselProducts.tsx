@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -8,76 +9,86 @@ const MegaDieselProducts = () => {
     {
       id: 1,
       image: '/lovable-uploads/da7ed15e-d692-4e94-8a35-e69d4bdb8567.png',
-      title: 'Injetores CR Delphi',
+      title: 'Peças para Sistema de Injeção Delphi',
       description: 'Injetores Common Rail Delphi para linha pesada e leve'
     },
     {
       id: 2,
       image: '/lovable-uploads/edd5b00e-56df-4bc7-b9df-aadfc6c5e073.png',
-      title: 'Bicos Injetores',
+      title: 'Peças para Sistema de Injeção Diesel',
       description: 'Bicos injetores de alta qualidade para sistema de injeção'
     },
     {
       id: 3,
       image: '/lovable-uploads/295f2aa3-6e1d-4a3e-aa3f-779a50b659cf.png',
-      title: 'Kit Motor Completo',
+      title: 'Peças para Reforma de Motor',
       description: 'Pistões, anéis e componentes para reforma de motor'
     },
     {
       id: 4,
       image: '/lovable-uploads/9d8a0bd0-e233-4706-bc23-6bc9b3526b66.png',
-      title: 'Bicos Injetores Delphi',
+      title: 'Peças Originais Delphi para Motores Diesel',
       description: 'Bicos injetores Delphi originais para máxima performance'
     },
     {
       id: 5,
       image: '/lovable-uploads/ba1700b2-16fa-436c-9d2b-76d7fb182fb9.png',
-      title: 'Bicos Injetores Especiais',
+      title: 'Peças para Diversos Motores Diesel',
       description: 'Linha completa de bicos injetores para diversos motores'
     },
     {
       id: 6,
       image: '/lovable-uploads/84c3d2e7-4e2a-426a-a12d-c8578a68ab2c.png',
-      title: 'Peças Delphi',
+      title: 'Peças Originais para Sistema Delphi',
       description: 'Componentes originais Delphi para sistema de injeção'
     },
     {
       id: 7,
       image: '/lovable-uploads/098a1be2-3425-4eba-9d5a-9ef88c97e679.png',
-      title: 'Anéis de Motor',
+      title: 'Peças para Reforma de Motores Diesel',
       description: 'Anéis de segmento Delphi para reforma de motores'
     },
     {
       id: 8,
       image: '/lovable-uploads/eda57ca3-1820-4898-8d74-46501ecf49b6.png',
-      title: 'Atuadores Delphi',
+      title: 'Peças Eletrônicas para Sistema Delphi',
       description: 'Atuadores e componentes eletrônicos Delphi'
     },
     {
       id: 9,
       image: '/lovable-uploads/2971075b-bba9-4651-91ad-496024ebc65c.png',
-      title: 'Kit Embreagem',
+      title: 'Peças para Sistema de Embreagem',
       description: 'Rolamento de embreagem e kits completos LUK RepSet'
     },
     {
       id: 10,
-      image: '/lovable-uploads/37c5e978-3d93-496a-a2c2-ab31210602a4.png'
+      image: '/lovable-uploads/37c5e978-3d93-496a-a2c2-ab31210602a4.png',
+      title: 'Peças para Linha Pesada',
+      description: 'Componentes especializados para veículos de linha pesada'
     },
     {
       id: 11,
-      image: '/lovable-uploads/7525d0b4-588c-4993-921d-7258bbb74b8e.png'
+      image: '/lovable-uploads/7525d0b4-588c-4993-921d-7258bbb74b8e.png',
+      title: 'Peças para Sistema de Injeção',
+      description: 'Componentes para sistema de injeção diesel'
     },
     {
       id: 12,
-      image: '/lovable-uploads/261337e7-4b4e-4e83-9815-cfa2a67eb698.png'
+      image: '/lovable-uploads/261337e7-4b4e-4e83-9815-cfa2a67eb698.png',
+      title: 'Peças para Motores Diesel',
+      description: 'Componentes diversos para motores diesel'
     },
     {
       id: 13,
-      image: '/lovable-uploads/e0b4c28e-5ed7-4afa-aced-fcc1389f4083.png'
+      image: '/lovable-uploads/e0b4c28e-5ed7-4afa-aced-fcc1389f4083.png',
+      title: 'Peças para Linha Leve',
+      description: 'Componentes especializados para veículos de linha leve'
     },
     {
       id: 14,
-      image: '/lovable-uploads/2343b17d-10fe-4a9d-b1ae-311d119b5e05.png'
+      image: '/lovable-uploads/2343b17d-10fe-4a9d-b1ae-311d119b5e05.png',
+      title: 'Peças para Sistema Automotivo',
+      description: 'Componentes diversos para sistemas automotivos'
     }
   ];
 
@@ -115,10 +126,10 @@ const MegaDieselProducts = () => {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="section-title">Um Pouco de Nossos Produtos</h2>
+        <h2 className="section-title">Nossas Peças Especializadas</h2>
         <p className="section-subtitle mx-auto">
-          Conheça nossa linha completa de autopeças para linha pesada e leve. 
-          Produtos de qualidade das melhores marcas do mercado.
+          Conheça nossa linha completa de peças para linha pesada e leve. 
+          Peças de qualidade das melhores marcas do mercado para todos os tipos de veículos.
         </p>
       </motion.div>
 
