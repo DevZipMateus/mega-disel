@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { Users, Award, Wrench } from 'lucide-react';
@@ -31,12 +32,12 @@ const MegaDieselAbout = () => {
     {
       icon: Wrench,
       title: 'Experiência',
-      description: 'Anos de experiência no mercado de autopeças para linha pesada e leve.'
+      description: 'Anos de experiência no mercado de autopeças para carros, SUVs, camionetes, vans, utilitários, caminhões e máquinas agrícolas.'
     },
     {
       icon: Award,
       title: 'Qualidade',
-      description: 'Produtos de qualidade das melhores marcas do mercado nacional e internacional.'
+      description: 'Peças de qualidade das melhores marcas do mercado nacional e internacional.'
     },
     {
       icon: Users,
@@ -58,8 +59,10 @@ const MegaDieselAbout = () => {
             Sobre a <span className="text-yellow-500">MEGA DIESEL</span>
           </h2>
           <p className="section-subtitle">
-            A MEGA DIESEL AUTOPEÇAS é seu novo conceito em autopeças para linha pesada e linha leve. 
-            Oferecemos agilidade, qualidade e confiança em cada atendimento.
+            A MEGA DIESEL AUTOPEÇAS é seu novo conceito em autopeças para carros, SUVs, camionetes, vans, 
+            utilitários, caminhões e máquinas agrícolas. Trabalhamos exclusivamente com venda de peças, 
+            oferecendo agilidade, qualidade e confiança em cada atendimento. 
+            <strong> NÃO TRABALHAMOS COM PEÇAS PARA MOTOS.</strong>
           </p>
         </motion.div>
 

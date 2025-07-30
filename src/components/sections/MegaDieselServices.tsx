@@ -30,39 +30,39 @@ const MegaDieselServices = () => {
 
   const services = [
     {
-      icon: Wrench,
-      title: "Reformas de Motores",
-      description: "Reforma completa de motores diesel com peças de qualidade e mão de obra especializada.",
-      features: ["Retífica", "Substituição de peças", "Testes de qualidade"]
+      icon: Settings,
+      title: "Sistemas de Injeção",
+      description: "Linha de peças que compõe a injeção de combustível do veículo, como bomba de combustível, bicos injetores e peças para reposição e manutenção destes itens.",
+      features: ["Bombas de combustível", "Bicos injetores", "Peças para reposição e manutenção"]
     },
     {
-      icon: Settings,
-      title: "Sistema de Injeção",
-      description: "Peças e serviços para sistemas de injeção eletrônica e mecânica.",
-      features: ["Bicos injetores", "Bombas de combustível", "Sensores"]
+      icon: Wrench,
+      title: "Reforma de Motores",
+      description: "Linha de peças que compõe o motor, incluindo todos os componentes necessários para reforma completa.",
+      features: ["Pistões, anéis e camisas", "Bloco do motor e cabeçote", "Jogo de juntas, bronzinas e válvulas", "Retentores"]
     },
     {
       icon: Truck,
       title: "Suspensão",
-      description: "Componentes de suspensão para veículos pesados e linha leve.",
+      description: "Componentes de suspensão para carros, SUVs, camionetes, vans, utilitários, caminhões e máquinas agrícolas.",
       features: ["Amortecedores", "Molas", "Buchas e componentes"]
     },
     {
       icon: ShieldCheck,
       title: "Sistemas de Freios",
-      description: "Peças para sistemas de freio com segurança e qualidade garantida.",
+      description: "Peças para sistemas de freio com segurança e qualidade garantida para todos os tipos de veículos.",
       features: ["Pastilhas e lonas", "Discos e tambores", "Componentes hidráulicos"]
     },
     {
       icon: Filter,
       title: "Filtros",
-      description: "Linha completa de filtros para todos os tipos de veículos diesel.",
+      description: "Linha completa de filtros para carros, SUVs, camionetes, vans, utilitários, caminhões e máquinas agrícolas.",
       features: ["Filtros de ar", "Filtros de óleo", "Filtros de combustível"]
     },
     {
       icon: Droplet,
       title: "Lubrificantes",
-      description: "Óleos e lubrificantes de qualidade premium para máximo desempenho.",
+      description: "Óleos e lubrificantes de qualidade premium para máximo desempenho de todos os tipos de veículos.",
       features: ["Óleos de motor", "Óleos hidráulicos", "Graxas especiais"]
     }
   ];
@@ -77,10 +77,11 @@ const MegaDieselServices = () => {
           transition={{ duration: 0.7 }}
         >
           <h2 className="section-title">
-            Nossos <span className="text-yellow-500">Serviços</span>
+            Nossas <span className="text-yellow-500">Peças</span>
           </h2>
           <p className="section-subtitle">
-            Tudo, exatamente tudo que você precisar, vai encontrar na MEGA DIESEL AUTOPEÇAS.
+            Tudo, exatamente tudo que você precisar em autopeças, vai encontrar na MEGA DIESEL AUTOPEÇAS. 
+            Atendemos carros, SUVs, camionetes, vans, utilitários, caminhões e máquinas agrícolas.
           </p>
         </motion.div>
 
@@ -129,7 +130,7 @@ const MegaDieselServices = () => {
               Precisa de <span className="text-yellow-500">Autopeças</span>?
             </h3>
             <p className="text-lg mb-6">
-              Entre em contato conosco e encontre exatamente o que você precisa!
+              Entre em contato conosco e encontre exatamente a peça que você precisa!
             </p>
             <a 
               href="https://wa.me/5551984082546?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20autopeças."

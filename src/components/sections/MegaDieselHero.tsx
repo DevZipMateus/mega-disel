@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Phone, MapPin, Clock } from 'lucide-react';
+
 const MegaDieselHero = () => {
   return <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Enhanced animated gradient background */}
@@ -44,7 +45,7 @@ const MegaDieselHero = () => {
             Seu Novo Conceito em{' '}
             <span className="text-yellow-500 drop-shadow-lg">Autopeças</span>
             <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>para Linha Pesada e Leve
+            <span className="sm:hidden"> </span>para Carros, SUVs, Camionetes, Vans, Utilitários, Caminhões e Máquinas Agrícolas
           </motion.h1>
 
           {/* Subtitle with enhanced styling */}
@@ -119,4 +120,5 @@ const MegaDieselHero = () => {
       </div>
     </section>;
 };
+
 export default MegaDieselHero;
