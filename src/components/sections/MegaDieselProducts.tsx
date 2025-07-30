@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -89,6 +88,18 @@ const MegaDieselProducts = () => {
       image: '/lovable-uploads/2343b17d-10fe-4a9d-b1ae-311d119b5e05.png',
       title: 'Peças para Sistema Automotivo',
       description: 'Componentes diversos para sistemas automotivos'
+    },
+    {
+      id: 15,
+      image: '/lovable-uploads/69d71750-0c64-4543-bc62-d85bb85ff3f1.png',
+      title: 'Peças Continental para Sistema de Injeção',
+      description: 'Componentes Continental de alta qualidade'
+    },
+    {
+      id: 16,
+      image: '/lovable-uploads/65d41b33-5d4c-4c0b-afd6-09b1c997b9f1.png',
+      title: 'Injetores DENSO Common Rail',
+      description: 'Injetores DENSO Common Rail para máxima performance'
     }
   ];
 
