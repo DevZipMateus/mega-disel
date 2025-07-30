@@ -118,6 +118,24 @@ const MegaDieselProducts = () => {
       image: '/lovable-uploads/17b70396-17ad-466d-a559-a03a3f755300.png',
       title: 'Linha Completa Delphi',
       description: 'Estoque completo de peças originais Delphi'
+    },
+    {
+      id: 20,
+      image: '/lovable-uploads/ff4b8164-686b-4320-b0d1-3f7889737daa.png',
+      title: 'Container Delphi Technologies',
+      description: 'Container original Delphi Technologies para armazenamento'
+    },
+    {
+      id: 21,
+      image: '/lovable-uploads/4cd69391-f2ea-49ba-85d3-96961e26a625.png',
+      title: 'TP Liner Delphi - TVS Technologies',
+      description: 'Conjunto de três caixas TP Liner Delphi TVS Technologies'
+    },
+    {
+      id: 22,
+      image: '/lovable-uploads/e78a06aa-029c-4f07-8cce-180a0a129ea3.png',
+      title: 'Bomba de Transferência Delphi 28516849-12B1',
+      description: 'Caixas de bombas de transferência Delphi Technologies'
     }
   ];
 
