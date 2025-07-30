@@ -59,8 +59,8 @@ const MegaDieselAbout = () => {
             Sobre a <span className="text-yellow-500">MEGA DIESEL</span>
           </h2>
           <p className="section-subtitle">
-            A MEGA DIESEL AUTOPEÇAS é uma empresa nova no mercado de Auto Peças, que vem em constante crescente!
-            Buscamos atender nossos clientes de forma única e atendimento personalizado, prezando pela total satisfação do cliente,
+            A MEGA DIESEL AUTOPEÇAS é uma empresa nova no mercado, que vem em constante crescimento!
+            Buscamos atender nossos clientes de forma única e  personalizada, prezando pela total satisfação do cliente,
             Trazemos um novo conceito no segmento autopeças linha pesada e leve, onde você compra de forma online e enviamos seu pedido até você.
             Entre em contato através do WhatsApp que nossa equipe terá o prazer de lhe atender.
             <strong> </strong>
