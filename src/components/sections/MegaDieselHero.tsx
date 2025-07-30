@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Phone, MapPin, Clock } from 'lucide-react';
@@ -15,7 +16,7 @@ const MegaDieselHero = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          {/* Logo with enhanced animation */}
+          {/* Logo with enhanced animation - increased size */}
           <motion.div initial={{
           opacity: 0,
           y: 30,
@@ -28,10 +29,10 @@ const MegaDieselHero = () => {
           duration: 0.8,
           ease: "easeOut"
         }} className="mb-8">
-            <img src="/lovable-uploads/a053a4c1-4f2f-487d-8096-af876dedd9a0.png" alt="MEGA DIESEL AUTOPEÇAS" className="h-24 sm:h-32 md:h-40 w-auto mx-auto filter drop-shadow-2xl" />
+            <img src="/lovable-uploads/a053a4c1-4f2f-487d-8096-af876dedd9a0.png" alt="MEGA DIESEL AUTOPEÇAS" className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto mx-auto filter drop-shadow-2xl" />
           </motion.div>
 
-          {/* Main heading with enhanced glow effect */}
+          {/* Main heading with reduced font size */}
           <motion.h1 initial={{
           opacity: 0,
           y: 30
@@ -41,7 +42,7 @@ const MegaDieselHero = () => {
         }} transition={{
           duration: 0.8,
           delay: 0.2
-        }} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             Seu Novo Conceito em{' '}
             <span className="text-yellow-500 drop-shadow-lg">Autopeças</span>
             <br className="hidden sm:block" />
