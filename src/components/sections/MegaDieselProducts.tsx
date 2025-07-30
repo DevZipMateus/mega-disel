@@ -100,6 +100,24 @@ const MegaDieselProducts = () => {
       image: '/lovable-uploads/65d41b33-5d4c-4c0b-afd6-09b1c997b9f1.png',
       title: 'Injetores DENSO Common Rail',
       description: 'Injetores DENSO Common Rail para máxima performance'
+    },
+    {
+      id: 17,
+      image: '/lovable-uploads/1077d371-cc0e-44bb-90ba-e68976ae6a10.png',
+      title: 'Injetores Common Rail Delphi',
+      description: 'Injetores Common Rail Delphi para linha leve e pesada'
+    },
+    {
+      id: 18,
+      image: '/lovable-uploads/d9fff8d5-2d46-40e8-9c5c-3a89d3bbf940.png',
+      title: 'Bomba de Alta Pressão Delphi',
+      description: 'Bomba de alta pressão para sistema Common Rail'
+    },
+    {
+      id: 19,
+      image: '/lovable-uploads/17b70396-17ad-466d-a559-a03a3f755300.png',
+      title: 'Linha Completa Delphi',
+      description: 'Estoque completo de peças originais Delphi'
     }
   ];
 
