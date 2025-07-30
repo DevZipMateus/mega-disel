@@ -31,31 +31,31 @@ const MegaDieselServices = () => {
   const services = [
     {
       icon: Settings,
-      title: "Sistemas de Injeção",
+      title: "Peças para Sistemas de Injeção",
       description: "Linha de peças que compõe a injeção de combustível do veículo, como bomba de combustível, bicos injetores e peças para reposição e manutenção destes itens.",
       features: ["Bombas de combustível", "Bicos injetores", "Peças para reposição e manutenção"]
     },
     {
       icon: Wrench,
-      title: "Reforma de Motores",
+      title: "Peças para Reforma de Motores",
       description: "Linha de peças que compõe o motor, incluindo todos os componentes necessários para reforma completa.",
       features: ["Pistões, anéis e camisas", "Bloco do motor e cabeçote", "Jogo de juntas, bronzinas e válvulas", "Retentores"]
     },
     {
       icon: Truck,
-      title: "Suspensão",
+      title: "Peças para Suspensão",
       description: "Componentes de suspensão para carros, SUVs, camionetes, vans, utilitários, caminhões e máquinas agrícolas.",
       features: ["Amortecedores", "Molas", "Buchas e componentes"]
     },
     {
       icon: ShieldCheck,
-      title: "Sistemas de Freios",
+      title: "Peças para Sistemas de Freios",
       description: "Peças para sistemas de freio com segurança e qualidade garantida para todos os tipos de veículos.",
       features: ["Pastilhas e lonas", "Discos e tambores", "Componentes hidráulicos"]
     },
     {
       icon: Filter,
-      title: "Filtros",
+      title: "peças para Filtros",
       description: "Linha completa de filtros para carros, SUVs, camionetes, vans, utilitários, caminhões e máquinas agrícolas.",
       features: ["Filtros de ar", "Filtros de óleo", "Filtros de combustível"]
     },
