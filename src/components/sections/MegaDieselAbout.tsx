@@ -1,7 +1,6 @@
-
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { Users, Target, Award, Wrench } from 'lucide-react';
+import { Users, Award, Wrench } from 'lucide-react';
 
 const MegaDieselAbout = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,11 +34,6 @@ const MegaDieselAbout = () => {
       description: 'Anos de experiência no mercado de autopeças para linha pesada e leve.'
     },
     {
-      icon: Target,
-      title: 'Precisão',
-      description: 'Diagnósticos precisos e soluções eficazes para seus problemas mecânicos.'
-    },
-    {
       icon: Award,
       title: 'Qualidade',
       description: 'Produtos de qualidade das melhores marcas do mercado nacional e internacional.'
@@ -69,7 +63,7 @@ const MegaDieselAbout = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <motion.div
               key={index}
