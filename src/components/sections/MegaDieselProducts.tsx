@@ -58,6 +58,26 @@ const MegaDieselProducts = () => {
       image: '/lovable-uploads/2971075b-bba9-4651-91ad-496024ebc65c.png',
       title: 'Kit Embreagem',
       description: 'Rolamento de embreagem e kits completos LUK RepSet'
+    },
+    {
+      id: 10,
+      image: '/lovable-uploads/37c5e978-3d93-496a-a2c2-ab31210602a4.png'
+    },
+    {
+      id: 11,
+      image: '/lovable-uploads/7525d0b4-588c-4993-921d-7258bbb74b8e.png'
+    },
+    {
+      id: 12,
+      image: '/lovable-uploads/261337e7-4b4e-4e83-9815-cfa2a67eb698.png'
+    },
+    {
+      id: 13,
+      image: '/lovable-uploads/e0b4c28e-5ed7-4afa-aced-fcc1389f4083.png'
+    },
+    {
+      id: 14,
+      image: '/lovable-uploads/2343b17d-10fe-4a9d-b1ae-311d119b5e05.png'
     }
   ];
 
@@ -114,7 +134,7 @@ const MegaDieselProducts = () => {
                 <div className="flex items-center justify-center p-8">
                   <img
                     src={product.image}
-                    alt={product.title}
+                    alt={`Produto ${product.id}`}
                     className="max-w-full max-h-80 object-contain rounded-lg"
                   />
                 </div>
