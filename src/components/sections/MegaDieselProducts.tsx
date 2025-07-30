@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -112,32 +111,12 @@ const MegaDieselProducts = () => {
           >
             {products.map((product) => (
               <div key={product.id} className="w-full flex-shrink-0">
-                <div className="grid md:grid-cols-2 gap-8 p-8">
-                  {/* Product image */}
-                  <div className="flex items-center justify-center">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="max-w-full max-h-80 object-contain rounded-lg"
-                    />
-                  </div>
-                  
-                  {/* Product info */}
-                  <div className="flex flex-col justify-center">
-                    <h3 className="text-2xl font-bold text-black mb-4">
-                      {product.title}
-                    </h3>
-                    <p className="text-gray-600 text-lg mb-6">
-                      {product.description}
-                    </p>
-                    <Button className="btn-secondary w-fit">
-                      <a href="https://wa.me/5551984082546?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20este%20produto." 
-                         target="_blank" 
-                         rel="noopener noreferrer">
-                        Solicitar Orçamento
-                      </a>
-                    </Button>
-                  </div>
+                <div className="flex items-center justify-center p-8">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="max-w-full max-h-80 object-contain rounded-lg"
+                  />
                 </div>
               </div>
             ))}
