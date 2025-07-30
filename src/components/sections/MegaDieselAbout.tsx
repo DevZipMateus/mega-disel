@@ -62,7 +62,7 @@ const MegaDieselAbout = () => {
             A MEGA DIESEL AUTOPEÇAS é seu novo conceito em autopeças para carros, SUVs, camionetes, vans, 
             utilitários, caminhões e máquinas agrícolas. Trabalhamos exclusivamente com venda de peças, 
             oferecendo agilidade, qualidade e confiança em cada atendimento. 
-            <strong> NÃO TRABALHAMOS COM PEÇAS PARA MOTOS.</strong>
+            <strong> </strong>
           </p>
         </motion.div>
 
